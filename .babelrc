@@ -1,0 +1,14 @@
+{
+    "presets": [
+        "@babel/env",
+        "@babel/typescript",
+        "@babel/react",
+        ["@emotion/babel-preset-css-prop", {"sourceMap": false}]
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime",
+        "@babel/proposal-class-properties",
+        "@babel/proposal-object-rest-spread",
+        ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+    ]
+}

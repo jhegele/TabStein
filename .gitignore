@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+*.app/
+.envrc
+testing/
+assets/icons/archive
+assets/icons/design

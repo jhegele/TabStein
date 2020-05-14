@@ -1,0 +1,31 @@
+{
+    "productName": "TabStein",
+    "appId": "com.tableau.jhegele.tabstein",
+    "icon": "assets/icons/icon.png",
+    "mac": {
+        "category": "public.app-category.utilities",
+        "target": [
+            {
+                "target": "dir",
+                "arch": "x64"
+            }
+        ]
+    },
+    "win": {
+        "target": [
+            {
+                "target": "nsis",
+                "arch": "x64"
+            }
+        ]
+    },
+    "directories": {
+        "output": "./testing"
+    },
+    "files": [
+        "dist/**/*",
+        "!node_modules${/*}",
+        "!dist/*.map"
+    ],
+    "asar": false
+}
