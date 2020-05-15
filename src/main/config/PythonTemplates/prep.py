@@ -121,7 +121,10 @@ async def make_predictions(df):
     for idx, predictions in enumerate(results):
         for model_results in predictions:
             results_col, einstein_response = model_results
-            totals = [p['prediction']['total'] for p in einstein_response['predictions']]
+            # If einstein gets a row with all nulls, it throws an obscure
+            # error. Just use null as the result to avoid issues with
+            # processing.
+            totals = [None if 'prediction' not in p else p['prediction']['total'] for p in einstein_response['predictions']]
             if results_col not in new_cols:
                 new_cols[results_col] = pd.Series(totals)
             else:
