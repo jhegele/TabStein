@@ -1,4 +1,4 @@
-# Tabpy Tools (Beta)
+# TabStein (Beta)
 
 Seamless integration between Tableau Prep Builder and Einstein Discovery's predictive capabilities!
 
