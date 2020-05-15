@@ -1,8 +1,8 @@
-version: 0.7.2
+version: 0.7.3
 files:
-  - url: TabStein-Setup-0.7.2.exe
-    sha512: iAT8lpw75sz3blIbAqXFcEFhdCNpTM2PZbD34/RdnlWhomiuDO6/mIiaLOCKLSwzZuuIG5dElwgZ6rkkKLEURA==
-    size: 49872579
-path: TabStein-Setup-0.7.2.exe
-sha512: iAT8lpw75sz3blIbAqXFcEFhdCNpTM2PZbD34/RdnlWhomiuDO6/mIiaLOCKLSwzZuuIG5dElwgZ6rkkKLEURA==
-releaseDate: '2020-05-14T13:15:01.949Z'
+  - url: TabStein-Setup-0.7.3.exe
+    sha512: a1sJi5YwQ0y6l17+jZTRfIxS2+GO2iDt06/fppOY8GeP2CqZYJhHPdPovC2uJD54Z6iLu+qBFVIaUBsXN7e+4A==
+    size: 49872124
+path: TabStein-Setup-0.7.3.exe
+sha512: a1sJi5YwQ0y6l17+jZTRfIxS2+GO2iDt06/fppOY8GeP2CqZYJhHPdPovC2uJD54Z6iLu+qBFVIaUBsXN7e+4A==
+releaseDate: '2020-05-15T14:20:18.140Z'
