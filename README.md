@@ -12,4 +12,4 @@ Check the [releases](./releases) folder for the latest build for your OS
 
 ## Video Demo
 
-<iframe width="1813" height="776" src="https://www.youtube.com/embed/tQrZd7r55wU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![TabStein](http://img.youtube.com/vi/tQrZd7r55wU/0.jpg)](http://www.youtube.com/watch?v=tQrZd7r55wU "TabStein")
