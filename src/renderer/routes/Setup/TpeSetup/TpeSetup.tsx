@@ -2,7 +2,6 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../../../store';
 import { Switch, Route, useHistory } from 'react-router-dom';
-import Confirm from './Confirm';
 import SfdcLogin from './SfdcLogin';
 import SetupModels from './SetupModels';
 import SetupServer from './SetupServer';
@@ -64,12 +63,6 @@ const TpeSetup: React.FC<TpeSetupProps> = ({ onDone, onAbort }) => {
     return (
         <Switch>
             <Route exact path='/setup/tpe/'>
-                <Confirm 
-                    onYes={handleConfirmYes}
-                    onNo={handleConfirmNo}
-                />
-            </Route>
-            <Route path='/setup/tpe/sfdc-login'>
                 <SfdcLogin 
                     onBack={handleSfdcLoginBack}
                     onAuthenticated={handleSfdcLoginAuthenticated}

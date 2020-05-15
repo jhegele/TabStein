@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Layout, Steps } from 'antd';
 import { css } from '@emotion/core';
-import Overview from './Overview/Overview';
 import TabpySetup from './TabpySetup/TabpySetup';
 import TpeSetup from './TpeSetup/TpeSetup';
 import Confirm from './Confirm/Confirm';
@@ -42,16 +41,11 @@ const Setup: React.FC = () => {
     }
 
     const handleCheckDependenciesNext = () => {
-        history.push('/setup/overview');
+        history.push('/setup/tabpy');
     }
 
     const handleCheckDependenciesBack = () => {
         history.push('/');
-    }
-
-    const handleOverviewNext = () => {
-        moveStep(1);
-        history.push('/setup/tabpy')
     }
 
     const handleTabpySetup = (selection: 'next' | 'prev') => {
@@ -99,9 +93,6 @@ const Setup: React.FC = () => {
                 <Switch>
                     <Route path='/setup/' exact>
                         <CheckDependencies onNext={handleCheckDependenciesNext} onBack={handleCheckDependenciesBack} />
-                    </Route>
-                    <Route path='/setup/overview'>
-                        <Overview onNext={handleOverviewNext} />
                     </Route>
                     <Route path='/setup/tabpy'>
                         <TabpySetup onNext={() => handleTabpySetup('next')} onPrev={() => handleTabpySetup('prev')} />

@@ -63,8 +63,15 @@ const Initialize: React.FC = () => {
                     dispatch(tpeUpdateAll(config.tpeConfig));
                 }
                 dispatch(pathUpdate(config.path));
-                if (config.tabpyConfig.hasExistingConfig) history.push('/config');
-                else history.push('/setup')
+                if (config.tabpyConfig.hasExistingConfig) {
+                    let prompt: string = 'It looks like you have an existing configuration in this folder. If ' +
+                                         'you continue, you will overwrite any existing files. Do you want to ' +
+                                         'proceed?';
+                    if (confirm(prompt)) {
+                        history.push('/setup');
+                    }
+                }
+                else history.push('/setup');
             }
         });
     }, [])
