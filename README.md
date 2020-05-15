@@ -4,7 +4,7 @@ Seamless integration between Tableau Prep Builder and Einstein Discovery's predi
 
 ## Documentation
 
-Link TBD!
+Full documentation is available at https://jhegele.github.io/TabStein/
 
 ## Installation
 
