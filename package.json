@@ -1,6 +1,6 @@
 {
   "name": "tabstein",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "main": "dist/main.js",
   "repository": "git@github.com:jhegele/TabStein.git",
   "author": "John Hegele",

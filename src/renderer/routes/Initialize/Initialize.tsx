@@ -128,7 +128,7 @@ const Initialize: React.FC = () => {
                 </div>
             </div>
             <div css={cssVersionInfo}>
-                Version {env_APP_VERSION} (alpha)
+                Version {env_APP_VERSION} (Beta)
             </div>
         </div>
     )
