@@ -17,6 +17,7 @@
     "pack:clean:win": "rimraf ./releases/*.exe* ./releases/win-unpacked",
     "release:mac": "npm run types:check && npm run build:prod && npm run pack:clean:mac && npm run pack:release:mac",
     "release:win": "npm run types:check && npm run build:prod && npm run pack:clean:win && npm run pack:release:win",
+    "docs:test": "npx docsify serve ./docs",
     "dev": "electron ."
   },
   "devDependencies": {
@@ -46,6 +47,7 @@
     "copy-webpack-plugin": "^5.1.1",
     "cross-env": "^7.0.2",
     "css-loader": "^3.5.2",
+    "docsify-cli": "^4.4.0",
     "electron": "^8.2.2",
     "electron-builder": "^22.6.0",
     "file-loader": "^6.0.0",
