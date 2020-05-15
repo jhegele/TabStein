@@ -16,7 +16,7 @@
     "pack:clean:mac": "rimraf ./releases/*.dmg* ./releases/mac",
     "pack:clean:win": "rimraf ./releases/*.exe* ./releases/win-unpacked",
     "release:mac": "npm run types:check && npm run build:prod && npm run pack:clean:mac && npm run pack:release:mac",
-    "release:win": "npm run types:check && npm run build:prod && npm run pack:clean:win && npm run pack:release:win",
+    "release:win": "npm run types:check && npm run pack:clean:win && npm run pack:release:win",
     "docs:test": "npx docsify serve ./docs",
     "dev": "electron ."
   },
