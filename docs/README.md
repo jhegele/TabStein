@@ -6,4 +6,7 @@
    <div>
       Seamless integration between Tableau Prep Builder and Einstein Discovery's predictive capabilities!
    </div>
+   <div style="margin-top: 12px">
+      <img src="imgs/index-hero.png" />
+   </div>
 </div>
