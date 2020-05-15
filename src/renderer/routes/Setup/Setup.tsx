@@ -42,7 +42,7 @@ const Setup: React.FC = () => {
     }
 
     const handleCheckDependenciesNext = () => {
-        history.push('/setup/overview');
+        history.push('/setup/tabpy');
     }
 
     const handleCheckDependenciesBack = () => {

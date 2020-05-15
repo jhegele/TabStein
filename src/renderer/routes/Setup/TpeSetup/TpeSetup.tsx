@@ -64,10 +64,14 @@ const TpeSetup: React.FC<TpeSetupProps> = ({ onDone, onAbort }) => {
     return (
         <Switch>
             <Route exact path='/setup/tpe/'>
-                <Confirm 
+                <SfdcLogin 
+                    onBack={handleSfdcLoginBack}
+                    onAuthenticated={handleSfdcLoginAuthenticated}
+                />
+                {/* <Confirm 
                     onYes={handleConfirmYes}
                     onNo={handleConfirmNo}
-                />
+                /> */}
             </Route>
             <Route path='/setup/tpe/sfdc-login'>
                 <SfdcLogin 
